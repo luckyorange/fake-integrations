@@ -1,0 +1,9 @@
+{
+  "build": {
+    "resources": [
+      "gitignore",
+      "npm",
+      "readme"
+    ]
+  }
+}
