@@ -1,0 +1,15 @@
+const micro = require('micro')
+const request = require('supertest')
+const service = require('../index')
+
+describe('backend', () => {
+  describe('/_health', () => {
+    test('should return 200 if the service started correctly', async () => {
+      const res = await request(micro(service))
+        .get('/_health')
+        .send()
+
+      expect(res.status).toBe(200)
+    })
+  })
+})
