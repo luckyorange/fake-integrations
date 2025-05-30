@@ -5,7 +5,7 @@ module.exports = {
     description: 'Connect Lucky Orange to click-funnels'
   },
   images: {
-    icon: ''
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/blogger/click-funnels-logo.png'
   },
   authentication: {
     type: 'none'

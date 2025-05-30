@@ -5,7 +5,7 @@ module.exports = {
     description: 'Connect Lucky Orange to Blogger'
   },
   images: {
-    icon: ''
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/blogger/blogger-logo-transparent.png'
   },
   authentication: {
     type: 'none'
