@@ -1,0 +1,15 @@
+{
+  "build": {
+    "resources": [
+      "readme",
+      {
+        "name": "integration-buddy-v2",
+        "options": {
+          "backend": true,
+          "core": true,
+          "privacy": true
+        }
+      }
+    ]
+  }
+}

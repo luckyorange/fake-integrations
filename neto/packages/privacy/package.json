@@ -1,0 +1,14 @@
+{
+  "name": "neto-privacy",
+  "version": "0.0.1",
+  "description": "Client side privacy code for our neto integration.",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.13"
+  }
+}
