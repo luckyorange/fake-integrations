@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/segment/segment-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://segment.com/docs/connections/destinations/catalog/lucky-orange/'
   },
   settings (s) {
     return s.object()

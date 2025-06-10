@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/webflow/webflow-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/301-how-to-install-in-webflow'
   },
   settings (s) {
     return s.object()

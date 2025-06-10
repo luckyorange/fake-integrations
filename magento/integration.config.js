@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/magento/magento-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/280-how-to-install-in-magento'
   },
   settings (s) {
     return s.object()

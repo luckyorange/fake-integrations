@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/neto/neto-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/305-how-to-install-in-neto'
   },
   settings (s) {
     return s.object()

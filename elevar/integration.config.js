@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/elevar/elevar-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/465-how-to-use-lucky-orange-with-elevar'
   },
   settings (s) {
     return s.object()

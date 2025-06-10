@@ -8,7 +8,8 @@ module.exports = {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/weebly/weebly-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/300-how-to-install-in-weebly'
   },
   settings (s) {
     return s.object()

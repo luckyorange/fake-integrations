@@ -5,10 +5,11 @@ module.exports = {
     description: 'Connect Lucky Orange to wix'
   },
   images: {
-    icon: ''
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/wix/wix-logo.png'
   },
   authentication: {
-    type: 'none'
+    type: 'appStore',
+    appStoreUrl: 'https://help-preview.luckyorange.com/article/299-how-to-install-in-wix'
   },
   settings (s) {
     return s.object()
