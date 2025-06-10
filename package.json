@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@luckyorange/elasticsearch": "^0.1.1",
+    "@luckyorange/secret-manager": "^0.1.1"
+  }
+}
