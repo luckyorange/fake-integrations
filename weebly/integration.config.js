@@ -11,12 +11,5 @@ module.exports = {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/300-how-to-install-in-weebly'
   },
-  settings (s) {
-    return s.object()
-      .keys({
-        v1: s.object()
-          .keys({
-          })
-      })
-  }
+  settings: {}
 }

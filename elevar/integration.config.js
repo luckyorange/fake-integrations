@@ -11,12 +11,5 @@ module.exports = {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/465-how-to-use-lucky-orange-with-elevar'
   },
-  settings (s) {
-    return s.object()
-      .keys({
-        v1: s.object()
-          .keys({
-          })
-      })
-  }
+  settings: {}
 }

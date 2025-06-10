@@ -11,12 +11,5 @@ module.exports = {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/305-how-to-install-in-neto'
   },
-  settings (s) {
-    return s.object()
-      .keys({
-        v1: s.object()
-          .keys({
-          })
-      })
-  }
+  settings: {}
 }

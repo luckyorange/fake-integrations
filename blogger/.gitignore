@@ -1,8 +1,0 @@
-.DS_store
-dist
-*.log
-*.env
-node_modules
-videos
-build
-.idea

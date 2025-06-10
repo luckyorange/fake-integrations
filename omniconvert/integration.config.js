@@ -11,12 +11,5 @@ module.exports = {
     type: 'appStore',
     appStoreUrl: 'https://help.omniconvert.com/kba/omniconvert-explore-and-lucky-orange-integration/'
   },
-  settings (s) {
-    return s.object()
-      .keys({
-        v1: s.object()
-          .keys({
-          })
-      })
-  }
+  settings: {}
 }

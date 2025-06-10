@@ -11,12 +11,5 @@ module.exports = {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/299-how-to-install-in-wix'
   },
-  settings (s) {
-    return s.object()
-      .keys({
-        v1: s.object()
-          .keys({
-          })
-      })
-  }
+  settings: {}
 }
