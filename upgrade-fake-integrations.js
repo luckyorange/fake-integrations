@@ -37,9 +37,24 @@ async function updateIntegrations() {
           }
 
           const body = {
-            title: integrationConfig.name || entry.name,
-            content: integrationConfig.description || '',
+            id: integrationConfig.id,
+            labels: {
+              name: integrationConfig.name || entry.name,
+              description: integrationConfig.description || ''
+            },
+            images: {
+              icon: integrationConfig.icon || ''
+            },
+            authentication: {
+              type: integrationConfig.authentication?.type || "appStore",
+              appStoreUrl: integrationConfig.authentication?.appStoreUrl || ''
+            },
+            customTabs: integrationConfig.customTabs || [],
+            settings: integrationConfig.settings || { type: "object", keys: { v1: { type: "object", keys: {} } } },
+            types: integrationConfig.types || [],
+            updatedAt: new Date().toISOString()
           };
+
 
           await es.index({
             index: 'integrations',
