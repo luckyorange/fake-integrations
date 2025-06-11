@@ -5,7 +5,7 @@ export default {
     description: 'Connect Lucky Orange to click-funnels'
   },
   images: {
-    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/blogger/click-funnels-logo.png'
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/click-funnels/click-funnels-logo.png'
   },
   authentication: {
     type: 'appStore',

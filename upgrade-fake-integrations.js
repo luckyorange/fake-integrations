@@ -43,7 +43,7 @@ async function updateIntegrations() {
               description: integrationConfig.description || ''
             },
             images: {
-              icon: integrationConfig.icon || ''
+              icon: integrationConfig.images.icon || ''
             },
             authentication: {
               type: integrationConfig.authentication?.type || "appStore",
