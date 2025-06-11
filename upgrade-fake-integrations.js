@@ -1,12 +1,11 @@
 import SecretManager from "@luckyorange/secret-manager";
 import ElasticSearch from "@luckyorange/elasticsearch";
-
 import fs from "fs";
-import path, { dirname } from "path";
+import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 const secretManager = SecretManager.getInstance({
 	initialCache: {},
@@ -17,35 +16,24 @@ const secretManager = SecretManager.getInstance({
 const elasticSearch = ElasticSearch.createInstance(secretManager);
 const es = await elasticSearch.getClient('forever');
 
-// TODO
-// [] loop through the files to fill in the name to the id
-// [] make the es request to add the new integration es
-// the id is inside the folders on the same level as this file, then inside their respective integration.config.file
-// await es.index({
-// 	index: 'integrations',
-// 	id: '',
-// 	body: {
-// 		title: 'Test',
-// 		content: 'This is a test',
-// 	},
-// });
-
 async function updateIntegrations() {
-  const baseDir = __dirname;
+  const baseDir = path.join(__dirname, "integrations");
   const entries = fs.readdirSync(baseDir, { withFileTypes: true });
 
   for (const entry of entries) {
     if (entry.isDirectory()) {
-      const configJsPath = path.join(baseDir, entry.name, 'integration.config.js');
+      const configJsPath = path.join(baseDir, entry.name, "integration.config.js");
 
       if (fs.existsSync(configJsPath)) {
         try {
+          // Dynamically import using the ES module syntax.
           const integrationModule = await import(pathToFileURL(configJsPath).href);
+          // Assuming the config uses a default export.
           const integrationConfig = integrationModule.default;
 
           if (!integrationConfig.id) {
-             console.warn(`Skipping folder "${entry.name}" – missing "id" in integration.config.js`);
-             continue;
+            console.warn(`Skipping folder "${entry.name}" – missing "id" in integration.config.js`);
+            continue;
           }
 
           const body = {
@@ -59,13 +47,13 @@ async function updateIntegrations() {
           //   body,
           // });
 
-          console.log(`Indexed integration from folder "${entry.name}" with id "${integrationConfig.id}" with body ${JSON.stringify(body)}`);
+          console.log(`Indexed integration from folder "${entry.name}" with id "${integrationConfig.id}"`);
         } catch (error) {
-          console.error(`Error processing integration in folder "${entry.name}": `, error);
+          console.error(`Error processing integration in folder "${entry.name}":`, error);
         }
       }
     }
   }
-};
+}
 
 await updateIntegrations();
