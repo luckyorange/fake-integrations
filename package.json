@@ -1,0 +1,10 @@
+{
+  "name": "fake-integrations",
+  "version": "1.0.0",
+  "description": "Fake integrations for Lucky Orange",
+  "type": "module",
+  "dependencies": {
+    "@luckyorange/elasticsearch": "^0.1.1",
+    "@luckyorange/secret-manager": "^0.1.1"
+  }
+}
