@@ -5,7 +5,7 @@ export default {
     description: 'Connect Lucky Orange to magento'
   },
   images: {
-    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/elevar/elevar-logo.png'
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/magento/magento-logo.png'
   },
   authentication: {
     type: 'appStore',
