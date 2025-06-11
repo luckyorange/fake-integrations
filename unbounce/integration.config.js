@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'unbounce',
   labels: {
     name: 'unbounce',

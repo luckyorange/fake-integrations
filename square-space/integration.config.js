@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'square-space',
   labels: {
     name: 'square-space',

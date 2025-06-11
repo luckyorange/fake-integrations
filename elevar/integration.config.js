@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'elevar',
   labels: {
     name: 'elevar',

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'segment',
   labels: {
     name: 'segment',

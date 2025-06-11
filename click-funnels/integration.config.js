@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'click-funnels',
   labels: {
     name: 'click-funnels',

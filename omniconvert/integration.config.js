@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'omniconvert',
   labels: {
     name: 'omniconvert',

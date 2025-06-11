@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   id: 'php-bb',
   labels: {
     name: 'php-bb',
