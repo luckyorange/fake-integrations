@@ -5,7 +5,7 @@ export default {
     description: 'Connect Lucky Orange to square-space'
   },
   images: {
-    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/square-space/square-space-logo.png'
+    icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/square-space/squarespace-logo.png'
   },
   authentication: {
     type: 'appStore',
