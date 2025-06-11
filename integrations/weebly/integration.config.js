@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/300-how-to-install-in-weebly'
-  },
-  settings: {}
+  }
 }

@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/302-how-to-install-in-unbounce'
-  },
-  settings: {}
+  }
 }

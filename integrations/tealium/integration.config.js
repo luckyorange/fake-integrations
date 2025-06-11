@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/532-how-to-integrate-lucky-orange-with-tealium'
-  },
-  settings: {}
+  }
 }

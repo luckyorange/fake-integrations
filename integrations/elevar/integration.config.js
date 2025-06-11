@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/465-how-to-use-lucky-orange-with-elevar'
-  },
-  settings: {}
+  }
 }

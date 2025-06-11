@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://segment.com/docs/connections/destinations/catalog/lucky-orange/'
-  },
-  settings: {}
+  }
 }

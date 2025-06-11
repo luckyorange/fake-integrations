@@ -10,6 +10,5 @@ export default {
   authentication: {
     type: 'appStore',
     appStoreUrl: 'https://help.omniconvert.com/kba/omniconvert-explore-and-lucky-orange-integration/'
-  },
-  settings: {}
+  }
 }
