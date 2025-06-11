@@ -41,11 +41,12 @@ async function updateIntegrations() {
             content: integrationConfig.description || '',
           };
 
-          // await es.index({
-          //   index: 'integrations',
-          //   id: integrationConfig.id,
-          //   body,
-          // });
+          await es.index({
+            index: 'integrations',
+            id: integrationConfig.id,
+            body,
+            refresh: 'true',
+          });
 
           console.log(`Indexed integration from folder "${entry.name}" with id "${integrationConfig.id}"`);
         } catch (error) {
