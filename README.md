@@ -7,3 +7,6 @@ This repository contains placeholder or "fake" integrations for various external
 Each integration typically includes:
 - A link or reference to the intended external system.
 - The companies logo.
+
+Add a new repo? Run this command:
+TBD
