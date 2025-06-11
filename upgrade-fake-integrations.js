@@ -3,7 +3,7 @@ import ElasticSearch from "@luckyorange/elasticsearch";
 
 import fs from "fs";
 import path, { dirname } from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -32,7 +32,6 @@ const es = await elasticSearch.getClient('forever');
 
 async function updateIntegrations() {
   const baseDir = __dirname;
-
   const entries = fs.readdirSync(baseDir, { withFileTypes: true });
 
   for (const entry of entries) {
@@ -41,7 +40,8 @@ async function updateIntegrations() {
 
       if (fs.existsSync(configJsPath)) {
         try {
-          const integrationConfig = require(configJsPath);
+          const integrationModule = await import(pathToFileURL(configJsPath).href);
+          const integrationConfig = integrationModule.default;
 
           if (!integrationConfig.id) {
              console.warn(`Skipping folder "${entry.name}" – missing "id" in integration.config.js`);
