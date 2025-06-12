@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/tealium/tealium-logo.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/532-how-to-integrate-lucky-orange-with-tealium'
   }
 }

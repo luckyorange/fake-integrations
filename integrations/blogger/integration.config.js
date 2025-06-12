@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/blogger/blogger-logo-transparent.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/308-how-to-install-in-blogger'
   }
 }

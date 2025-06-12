@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/omniconvert/omniconvert-logo.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://help.omniconvert.com/kba/omniconvert-explore-and-lucky-orange-integration/'
   }
 }

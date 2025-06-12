@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/php-bb/php-logo.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/304-how-to-install-in-phpbb'
   }
 }

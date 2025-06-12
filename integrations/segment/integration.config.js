@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/segment/segment-logo.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://segment.com/docs/connections/destinations/catalog/lucky-orange/'
   }
 }

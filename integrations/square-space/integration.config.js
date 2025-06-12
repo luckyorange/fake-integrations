@@ -8,7 +8,7 @@ export default {
     icon: 'https://storage.googleapis.com/lucky-orange-public/images/integrations/square-space/squarespace-logo.png'
   },
   authentication: {
-    type: 'appStore',
+    type: 'helpDoc',
     appStoreUrl: 'https://help-preview.luckyorange.com/article/303-how-to-install-in-squarespace'
   }
 }
